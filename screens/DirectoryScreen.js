@@ -11,6 +11,7 @@ const DirectoryScreen = ({ navigation }) => {
       <ListItem
         onPress={() => navigation.navigate("CampsiteInfo", { campsite })}
       >
+        <Avatar source={campsite.image} rounded />
         <ListItem.Content>
           <ListItem.Title>{campsite.name}</ListItem.Title>
           <ListItem.Subtitle>{campsite.description}</ListItem.Subtitle>
